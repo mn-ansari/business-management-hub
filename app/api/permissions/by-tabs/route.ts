@@ -32,7 +32,7 @@ export async function GET(request: NextRequest) {
     // Get all menu items with their features
     const tabPermissions: TabPermissionGroup[] = MENU_ITEMS.map(item => {
       const tabKey = item.href.split('/').pop() as keyof typeof FEATURE_PERMISSIONS;
-      const features = FEATURE_PERMISSIONS[tabKey] || [];
+      const features = [...(FEATURE_PERMISSIONS[tabKey] || [])] as FeaturePermission[];
       
       return {
         value: item.permission,
