@@ -1,0 +1,71 @@
+{
+  "name": "business-management-hub",
+  "version": "1.0.0",
+  "description": "A complete business management solution for small shops to manage sales, customers, inventory, and generate professional invoices",
+  "author": "Business Management Hub Contributors",
+  "license": "MIT",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/business-management-hub.git"
+  },
+  "homepage": "https://github.com/yourusername/business-management-hub",
+  "bugs": {
+    "url": "https://github.com/yourusername/business-management-hub/issues"
+  },
+  "keywords": [
+    "business-management",
+    "saas",
+    "sales",
+    "inventory",
+    "invoicing",
+    "next.js",
+    "react",
+    "typescript"
+  ],
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "type-check": "tsc --noEmit",
+    "format": "prettier --write \"**/*.{ts,tsx,js,json,md}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,json,md}\"",
+    "security:audit": "npm audit"
+  },
+  "dependencies": {
+    "next": "^14.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "mysql2": "^3.7.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "chart.js": "^4.4.1",
+    "react-chartjs-2": "^5.2.0",
+    "jspdf": "^2.5.1",
+    "jspdf-autotable": "^3.8.2",
+    "react-hot-toast": "^2.4.1",
+    "cookie": "^0.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.5",
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/jsonwebtoken": "^9.0.5",
+    "@types/cookie": "^0.6.0",
+    "typescript": "^5.3.3",
+    "tailwindcss": "^3.4.1",
+    "postcss": "^8.4.33",
+    "autoprefixer": "^10.4.17",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "^14.1.0"
+  }
+}
+
